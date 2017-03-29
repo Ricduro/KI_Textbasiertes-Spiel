@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConqueredKingdom
 {
@@ -16,6 +12,7 @@ namespace ConqueredKingdom
         {
             int att_int;
 
+            //float e = (float)rnd.NextDouble();
             float e = (float)rnd.NextDouble();
             att_int = 0;
 

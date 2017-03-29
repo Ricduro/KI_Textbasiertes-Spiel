@@ -1,10 +1,6 @@
 ﻿using SFML.Window;
 using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConqueredKingdom
 {
@@ -219,7 +215,7 @@ namespace ConqueredKingdom
         // This method controls the adjustment of weights in the perceptron
         public bool TrainBot()
         {
-            double desired = 0;           
+            int desired = 0;           
 
             while (cnt < 100)        // Set amount of fights
             {
@@ -270,15 +266,15 @@ namespace ConqueredKingdom
                     {
                         if (s_attack == 1)
                         {
-                            desired = 0.5;
+                            desired = 2;
                         }
                         else if (s_attack == 2)
                         {
-                            desired = 0.83;
+                            desired = 3;
                         }
                         else
                         {
-                            desired = 0.16;
+                            desired = 1;
                         }
 
                         pvp_AI.Train(desired);
@@ -308,15 +304,15 @@ namespace ConqueredKingdom
                     {
                         if (t_attack == 1)
                         {
-                            desired = 0.5;
+                            desired = 2;
                         }
                         else if (t_attack == 2)
                         {
-                            desired = 0.9;
+                            desired = 3;
                         }
                         else
                         {
-                            desired = 0.1;
+                            desired = 1;
                         }
 
                         pvp_AI.Train(desired);
@@ -359,7 +355,7 @@ namespace ConqueredKingdom
                 pvp_AI.BMI = 22;
                 non_AI.BMI = 34;
             }
-            else if (r <= 0.5)
+            else if (r >= 0.5)
             {
                 pvp_AI.BMI = 34;
                 non_AI.BMI = 22;
