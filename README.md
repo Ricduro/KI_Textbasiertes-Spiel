@@ -2,8 +2,7 @@
 ## "Conquered Kingdom" a text-based Unity game
 
 Text-based game made during an artificial intelligence uni course. 
-Player battles an AI opponent in a 1 versus 1 fight until one is defeated. Attacks happen automatically every 3 seconds, during this timeframe 
-both fighters choose an attack type. Player can choose with "A", "S" and "D" keys, otherwise the previous attack is repeated.
+Player battles an AI opponent in a 1 versus 1 melee fight until one is defeated. Attacks happen automatically every 3 seconds, during this timeframe both fighters choose an attack type. Player can choose with "A", "S" and "D" keys, otherwise the previous attack is repeated.
 Similar to rock-paper-scissors, the comparison of the choice of both fighters decides who does damage, with added (somewhat random) chance to
 dodge an attack, based on the two fighters being in different weight classes. The higher & lower weightclass is randomly assigned every 
 playthrough.
