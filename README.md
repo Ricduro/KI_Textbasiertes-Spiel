@@ -1,5 +1,4 @@
-# KI_Textbasiertes-Spiel (C#)
-## "Conquered Kingdom" a text-based Unity game
+## "Conquered Kingdom" a text-based Unity game (C#)
 
 Text-based game made during an artificial intelligence uni course. 
 Player battles an AI opponent in a 1 versus 1 melee fight until one is defeated. Attacks happen automatically every 3 seconds, during this timeframe both fighters choose an attack type. Player can choose with "A", "S" and "D" keys, otherwise the previous attack is repeated.
